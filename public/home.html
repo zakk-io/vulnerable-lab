@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vulnerable Labs</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-purple-800 via-indigo-700 to-blue-600 py-8 shadow-xl">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 to-purple-200">
+          Vulnerable Labs
+        </h1>
+        <p class="mt-4 text-lg max-w-2xl mx-auto text-gray-300">
+          A hands-on sandbox to master web vulnerabilities—explore, experiment, and enhance your security skills.
+        </p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-6 py-12">
+      <section>
+        <h2 class="text-4xl font-bold mb-10 text-center text-white">
+          Choose Your Challenge
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- Card Template -->
+          <a href="/xss" class="group block bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 shadow-2xl transform hover:scale-105 transition duration-300 backdrop-blur-sm border border-transparent hover:border-indigo-400">
+            <div class="flex items-center justify-center mb-6">
+              <i class="fas fa-bug fa-4x text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 animate-pulse"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-center text-indigo-300 group-hover:text-purple-300 transition">
+              Cross-Site Scripting (XSS)
+            </h3>
+          </a>
+
+
+          <a href="/auth-bypass" class="group block bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 shadow-2xl transform hover:scale-105 transition duration-300 backdrop-blur-sm border border-transparent hover:border-indigo-400">
+            <div class="flex items-center justify-center mb-6">
+              <i class="fas fa-user-lock fa-4x text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 animate-pulse"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-center text-indigo-300 group-hover:text-purple-300 transition">
+              Authentication Bypass
+            </h3>
+          </a>
+
+          <a href="/sql-injection" class="group block bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 shadow-2xl transform hover:scale-105 transition duration-300 backdrop-blur-sm border border-transparent hover:border-indigo-400">
+            <div class="flex items-center justify-center mb-6">
+              <i class="fas fa-database fa-4x text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 animate-pulse"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-center text-indigo-300 group-hover:text-purple-300 transition">
+              SQL Injection
+            </h3>
+          </a>
+
+
+          <a href="/ssrf" class="group block bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 shadow-2xl transform hover:scale-105 transition duration-300 backdrop-blur-sm border border-transparent hover:border-indigo-400">
+            <div class="flex items-center justify-center mb-6">
+              <i class="fas fa-network-wired fa-4x text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 animate-pulse"></i>
+            </div>
+            <h3 class="text-2xl font-semibold text-center text-indigo-300 group-hover:text-purple-300 transition">
+              Server-Side Request Forgery (SSRF)
+            </h3>
+          </a>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6">
+      <div class="container mx-auto px-6 text-center text-gray-500">
+        &copy; 2025 Vulnerable Labs. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
