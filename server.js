@@ -15,6 +15,12 @@ app.get('/', (req, res) => {
 });
 
 
+app.get('/blog', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'blog.html'));
+});
+
+
+
 
 
 
@@ -54,8 +60,8 @@ app.get('/auth-bypass/default-admin/login', (req, res) => {
     res.sendFile(path.join(__dirname, 'public' , 'bugs', 'auth-bypass', 'labs', 'default-admin.html'));
 });
 
-app.get('/auth-bypass/brute-force/login', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public' , 'bugs', 'auth-bypass', 'labs', 'default-admin.html'));
+app.get('/auth-bypass/hidden-field/login', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public' , 'bugs', 'auth-bypass', 'labs', 'hidden-field.html'));
 });
 
 // Start server
