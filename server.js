@@ -16,9 +16,7 @@ app.get('/', (req, res) => {
 
 
 
-app.get('/auth-bypass', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public' , 'bugs', 'auth-bypass', 'auth-bypass.html'));
-});
+
 
 
 
@@ -42,6 +40,23 @@ app.get('/xss/dom', (req, res) => {
 
 
 
+
+//auth-bypass
+app.get('/auth-bypass', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public' , 'bugs', 'auth-bypass', 'auth-bypass.html'));
+});
+
+app.get('/auth-bypass/admin', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public' , 'bugs', 'auth-bypass', 'admin.html'));
+});
+
+app.get('/auth-bypass/default-admin/login', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public' , 'bugs', 'auth-bypass', 'labs', 'default-admin.html'));
+});
+
+app.get('/auth-bypass/brute-force/login', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public' , 'bugs', 'auth-bypass', 'labs', 'default-admin.html'));
+});
 
 // Start server
 app.listen(2000, () => {
