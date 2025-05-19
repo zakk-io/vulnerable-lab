@@ -64,6 +64,12 @@ app.get('/auth-bypass/hidden-field/login', (req, res) => {
     res.sendFile(path.join(__dirname, 'public' , 'bugs', 'auth-bypass', 'labs', 'hidden-field.html'));
 });
 
+app.get('/auth-bypass/brute-force/login', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public' , 'bugs', 'auth-bypass', 'labs', 'brute-force.html'));
+});
+
+
+
 // Start server
 app.listen(2000, () => {
     console.log(`Server running on http://localhost:2000`);
