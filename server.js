@@ -36,6 +36,10 @@ app.get('/xss/reflected', (req, res) => {
     res.sendFile(path.join(__dirname, 'public' ,'bugs','xss', 'labs', 'reflected-xss.html'));
 });
 
+app.get('/xss/dom', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public' ,'bugs','xss', 'labs', 'dom-xss.html'));
+});
+
 
 
 
